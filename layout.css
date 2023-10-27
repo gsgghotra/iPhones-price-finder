@@ -1,0 +1,560 @@
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-image: url('img/bgdark.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000000;
+}
+
+.contain {
+    /* container, width to cut it, overflow so if there is it is hidden */
+    width: 95%;
+    margin: auto 0;
+    overflow: hidden;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #000000d6;
+    color: #ffffff;
+    padding-top: 10px;
+    min-height: 70px;
+    padding-left: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* Height will adjust as if the menu goes to next line because small screen */
+}
+
+header a {
+    /* go insider header and select tag "a" */
+    text-decoration: none;
+    /* removes the underline for links */
+    color: #f4f4f4;
+    text-transform: uppercase;
+    /* as the name suggests, it will make the text on the menu uppercase nav bar*/
+}
+
+ul {
+    /*unordered list, remove paddings and bulletpoint*/
+    margin: 0; 
+    padding: 0;
+}
+
+header li {
+    /* make the list horizontal */
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+    /* top right bottom left paddings */
+}
+
+header #tophead {
+    /*This is the title of the page with id */
+    float: left;
+}
+
+header #tophead h1 {
+    margin: 0;
+}
+
+header nav {
+    /* select the nav from header */
+    position: relative;
+    float: right;
+    right: 65px;
+    margin-top: 20px;
+}
+
+.focus {
+    /* this will change colour and size of title and also the selected nav page */
+    color: #ff4531;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+#introText {
+    color: #5CDB95;
+    text-align: center;
+    font-size: 28px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+
+
+/* INTRO big picture*/
+
+#intro .contain {
+    margin: 50px auto;
+    text-align: center;
+}
+
+#intro h1 {
+    margin-top: 100px;
+    font-size: 38px;
+    margin-bottom: 11px;
+    color: #ff4531;
+}
+
+#intro p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+/*BIG picture finishes and promotion comes */
+
+#promotion {
+    padding: 15px;
+    padding-left: 40px;
+    color: #ffffff;
+    background: #35424a;
+}
+
+
+#promotion input[type="text"] {
+    border-radius: 4px;
+    outline: none;
+    width: 160px;
+    padding: 5px;
+    height: 35px;
+    -webkit-transition: width .35s ease-in-out;
+    transition: width .35s ease-in-out;
+    font-family: "Berlin Sans FB";
+    font-size: 20px;
+}
+
+.buttons {
+    height: 30px;
+    width: 75%;
+    padding: 0 10px 0 10px;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #878484;
+}
+
+.buttons:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Bicycles on sale */
+.phoneBoxes{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+}
+.phonesList {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.phoneBoxes .box {
+    float: left;
+    width: 285px;
+    height: 350px;
+    overflow: hidden;
+    /* padding: 3px; */
+    margin: 10px;
+    text-align: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.3s;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.phoneBoxes .box:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.phoneBoxes .box img {
+    height: 135px;
+    padding-top: 30px;
+}
+
+#indexBar {
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+    clear: both;
+    /* Do not allow floating elements*/
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: center;
+    clear: both;
+    /* Do not allow floating elements*/
+}
+
+#info {
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 100px;
+    color: white;
+}
+#info h1 {
+    text-align: center;
+}
+
+#info p {
+    font-size: 15px;
+
+    padding: 0 200px 20px 40px;
+}
+
+.phoneSite{
+    font-size: 10px;
+    margin-top: 5px;
+    padding: 0;
+    color: #35424a;
+}
+.phoneInfo{
+    padding-top: 0px;
+    margin-top: -15px;
+    font-size: 80%;
+}
+
+.buttonArea {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.dealPriceLabel{
+    font-size: 90%;
+    color: #4c4747;
+}
+
+/*Right side sidebar*/
+
+aside#rightbar {
+    float: right;
+    width: 25%;
+    margin-top: 10px;
+    margin-right: 60px
+}
+
+
+/* Dark Theme Touch*/
+
+.darktouch {
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*  JQUERY + HTML + COLOURS TO CHANGE IT */
+
+#theme {
+    color: black;
+    margin-top: 20px;
+    margin-right: 45%;
+    float: right;
+}
+
+.colorBlock {
+    width: 50px;
+    height: 50px;
+    float: right;
+    margin-bottom: 5px;
+}
+
+#Grey {
+    border-bottom: grey 3px solid;
+    color: grey;
+    background: grey;
+}
+
+#Purple {
+    border-bottom: blueviolet 3px solid;
+    color: blueviolet;
+    background: blueviolet;
+}
+
+#Cream {
+    border-bottom: burlywood 3px solid;
+    color: burlywood;
+    background: burlywood;
+}
+
+.buttons {
+    cursor: pointer;
+}
+
+.pagination {
+    background-color: white;
+    margin-left: 100px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+
+/* model */
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 30px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.modal-content h4 {
+    text-align: center;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#selectedProductModel {
+    overflow: auto;
+    margin-bottom: 2.5%;
+    padding-left: 100px;
+}
+
+.post-thumb {
+    float: left;
+    width: 150px;
+}
+
+.post-thumb img {
+    display: block;
+    height: 60%;
+    width: 85%;
+}
+
+.post-modal {
+    background-color: #f4f4f4;
+    width: 80%;
+    border: 1px solid #c3c3c3;
+    border-radius: 10px;
+    /* padding-left: 10px; */
+    margin-bottom: 1%;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-left: 100px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.post-modal form {
+    float: right;
+    margin-right: 2%;
+    font-weight: bold;
+}
+
+.post-modal h3 {
+    margin: 0;
+    padding: 5px;
+}
+
+.post-modal:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.post-title {
+    font-weight: bold;
+    font-size: 140%;
+    padding: 4px;
+    background: #fefefe;
+    border-radius: 5px;
+    width: 90%;
+    text-align: left;
+    color: #ff4531;
+}
+
+#search li {
+    list-style-type: none;
+    text-align: left;
+    background-color: #f6f6f6;
+    /* Grey background color */
+    display: block;
+    /* Make it into a block element to fill the whole list */
+    border-left: 2px solid #000;
+    width: 165px;
+}
+
+#search {
+    margin-bottom: 1%;
+}
+
+#search ul {
+    padding: 0px;
+}
+
+#search {
+    padding: 0px;
+    width: 18%;
+    height: 10%;
+}
+
+#search ul :hover {
+    background-color: rgba(238, 238, 238, 0.87);
+    /* Add a hover effect to all links, except for headers */
+}
+
+/* Search box */
+search_box {
+padding-top : 200px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin :25px auto;
+    width : 612px;
+    height: 54px;
+    background-color : white;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 38px 0px rgba(0,0,0,0.1);
+}
+
+.select_area {
+    color : #ff4531;
+    display : flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif; line-height:24px;
+    font-weight : medium ;
+    margin-left: 20px;
+}
+
+.text {
+padding-left:15px;
+}
+
+.line {
+margin-left: 15px;
+border-left: 1px solid #D8D8D8;
+height: 40px;
+}
+
+.search_text {
+    width: 100%;
+    border: none;
+    margin-left : 15px;
+    font-size : 16px;
+    font-family: 'Roboto', sans-serif; line-height:24px;
+    font-weight : Regular ;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ADB1B8;
+}
+
+
+.text_and-icon {
+width: 70%;
+}
+.search_icon {
+color : #5E6573;
+    transition: all .6s ease-in-out;
+    -webkit-transition: all .6s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: all .6s ease-in-out; /** Firefox **/
+    -o-transition: all .6s ease-in-out; /** Opera **/
+}
+
+.search_text:focus {
+outline: none !important;
+}
+
+.search_text:focus + .search_icon{
+color : #4451FE;
+transform: translate(55px,0);
+    -webkit-transform: translate(55px,0); 
+    -o-transform: translate(55px,0); 
+    -moz-transform: translate(55px);
+}
+
+.searchResultHeading{
+    color:white;
+    text-align: center;
+}
