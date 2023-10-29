@@ -219,7 +219,7 @@ var app = new Vue({
             } 
 
             // Make an API request to search for phones
-            fetch('http://localhost:8081/search/?search=' + this.search + '', {
+            fetch('http://54.221.99.161:5001/search/?search=' + this.search + '', {
                 method: 'GET',
             })
                 .then(function(response) {
@@ -251,7 +251,7 @@ var app = new Vue({
             //console.log(id + 'this is the id');
 
             // Make an API request to get phone details for the modal
-            fetch('http://localhost:8081/phone/' + id, {
+            fetch('http://54.221.99.161:5001/phone/' + id, {
                 method: 'GET',
             })
                 .then(function(response) {
@@ -306,7 +306,7 @@ var app = new Vue({
             let tmp = this.active * this.itemsPerPage - this.itemsPerPage;
 
             // Make an API request to get phone data for pagination
-            fetch('http://localhost:8081/phone/?num_items=' + this.itemsPerPage + '&offset=' + tmp + '', {
+            fetch('http://54.221.99.161:5001/phone/?num_items=' + this.itemsPerPage + '&offset=' + tmp + '', {
                 method: 'GET',
             })
                 .then(function(response) {

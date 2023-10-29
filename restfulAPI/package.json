@@ -7,13 +7,29 @@
     "test": "npx mocha API.test.js",
     "start": "node server.js"
   },
+    "engines": {
+    "node": "18.x || 16.x"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "ejs": "^3.1.5",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
-    "cors": "^2.8.5"
-  }
+    "cors": "^2.8.5",
+     "got": "^11.3.0",
+    "tape": "^4.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gsgghotra/iPhones-price-finder/tree/main/restfulAPI"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
