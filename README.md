@@ -36,7 +36,7 @@ To see the iPhones Price Finder in action, check out the website [here](https://
 ![Screenshot of Search Feature](assets/img/screenshots/Screenshot-search.png)
 
 - View all Phones
-![ScreenShot of Viewall Page](assets/img/screenshots/ScreenshotViewall.png)
+![Screenshot of View all Page](assets/img/screenshots/ScreenshotViewall.png)
 
 
 ## Technologies Used
