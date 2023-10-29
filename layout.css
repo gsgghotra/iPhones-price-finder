@@ -42,6 +42,11 @@ header a {
     /* as the name suggests, it will make the text on the menu uppercase nav bar*/
 }
 
+.logoImage{
+    width:168px;
+    height:65px;
+}
+
 ul {
     /*unordered list, remove paddings and bulletpoint*/
     margin: 0; 
@@ -461,6 +466,8 @@ aside#rightbar {
     width: 165px;
 }
 
+
+
 #search {
     margin-bottom: 1%;
 }
@@ -484,6 +491,9 @@ aside#rightbar {
 search_box {
 padding-top : 200px;
 }
+
+
+
 
 .search {
     display: flex;
@@ -518,7 +528,7 @@ height: 40px;
 }
 
 .search_text {
-    width: 100%;
+    width: 80%;
     border: none;
     margin-left : 15px;
     font-size : 16px;
@@ -557,4 +567,25 @@ transform: translate(55px,0);
 .searchResultHeading{
     color:white;
     text-align: center;
+}
+
+
+/* Small Devices Control */
+@media only screen and (max-width: 900px) {
+    .search {
+        width: 80%;
+    }
+
+
+}
+@media only screen and (max-width: 480px) {
+.logoImage{
+    width:120px;
+    height: auto;
+    padding-top: 10px;
+}
+
+header li {
+    padding: 0 10px 0 10px;
+}
 }

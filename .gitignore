@@ -37,4 +37,6 @@ ehthumbs.db
 Thumbs.db
 
 # ignore all files in any directory named node
-restfulAPI/node_modules
+node-express-ec2/node_modules
+
+**/.env
