@@ -52,7 +52,7 @@ This project is built using the following technologies:
 
 - `/Web-Scraper`: Contains the Java source code for scraping data.
 - `/node-express-ec2`: Restful API directory can be found [here](https://github.com/gsgghotra/)
-- `/asstets`: Contains public assets, e.g., images, stylesheets.
+- `/assets`: Contains public assets, e.g., images, stylesheets.
 
 
 ## License
